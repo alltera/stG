@@ -8,14 +8,8 @@ var VelX = 0
 var VelY = 10
 var velocity = Vector2(0, 0)
 # Called when the node enters the scene tree for the first time.
-func _physics_process(delta):
-
-	
-	var on_floor = CollisionShape2D.NOTIFICATION_MOVED_IN_PARENT
-
-	
+func _physics_process(_delta):
 	var Walk_speed = 20
-	var Jump_hight
 	if Input.is_action_pressed("ui_right"):
 		VelX += 1
 	elif VelX >= 0:
@@ -24,7 +18,7 @@ func _physics_process(delta):
 		VelX -= 1
 	elif VelX <= 0:
 		VelX += 1
-	if Input.is_action_pressed("ui_up") and on_floor:
+	if Input.is_action_pressed("ui_up"):
 		VelY -= 20
 	else: 
 		VelY = 10

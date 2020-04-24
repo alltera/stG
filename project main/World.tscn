@@ -1,13 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://project main/Art/TestPlayer.png" type="Texture" id=1]
 [ext_resource path="res://project main/Code/Player.gd" type="Script" id=2]
 [ext_resource path="res://project main/Art/icon.png" type="Texture" id=3]
-[ext_resource path="res://project main/RayCast2D.gd" type="Script" id=4]
-
-
-
-
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -36,7 +31,6 @@ smoothing_speed = 900.0
 
 [node name="RayCast2D" type="RayCast2D" parent="Player"]
 position = Vector2( -1.95068, 35.1126 )
-script = ExtResource( 4 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 position = Vector2( 254.977, 552.637 )
